@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+:root {
+  --black: #1c1f33;
+  --white: #fdfdff;
+  --light-color: #40434e;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --purple: #5c374c;
+  --light-purple: #8c7aa9;
+}
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+}
+
+header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+header .flex .logo {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header .flex .logo i {
+  color: var(--light-purple);
+}
+
+header .flex .navbar a {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--light-color);
+}
+
+header .flex .navbar a.active,
+header .flex .navbar a:hover {
+  color: var(--white);
+  background: var(--purple);
+}
+
+header .flex .icon a,
+header .flex .icon i {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 4.5rem;
+  color: var(--black);
+  background: #eee;
+  border-radius: 50%;
+}
+
+header .flex .icon a:hover,
+header .flex .icon i:hover {
+  color: var(--white);
+  background: var(--purple);
+  transform: rotate(360deg);
+  transition: 1s;
+}
+
+header .flex .icon #menu-bars {
+  display: none;
+}
+/* Media Query */
+@media (max-width: 768px) {
+  header .flex .icon #menu-bars {
+    display: inline-block;
+  }
+  header .flex .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .flex .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .flex .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: #eee;
+  }
+}
+
+/* Search Section */
+#search-form {
+  position: fixed;
+  top: -110%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1004;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  display: flex;
+}
+
+#search-form.active {
+  top: 0;
+}
+
+#search-form #search-box {
+  width: 50rem;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid var(--white);
+  color: var(--white);
+  font-size: 3rem;
+  text-decoration: none;
+  background: none;
+}
+
+#search-form #search-box::placeholder {
+  color: var(--white);
+}
+
+#search-form label {
+  color: var(--white);
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+#search-form label:hover {
+  color: var(--purple);
+}
+
+#search-form #close {
+  position: absolute;
+  color: var(--white);
+  cursor: pointer;
+  top: 2rem;
+  right: 3rem;
+  font-size: 5rem;
+}
