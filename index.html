@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -18,6 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>SE-Restaurant</title>
   </head>
   <body>
@@ -51,13 +55,210 @@
       <i class="fa-solid fa-xmark" id="close"></i>
     </form>
     <!--Home Section-->
+    <div class="container">
+      <section class="home" id="home">
+        <div class="swiper home-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <div class="content">
+                <span>Our special dish</span>
+                <h3>Spicy pasta</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis voluptatum aut sapiente nobis recusandae explicabo
+                  veniam voluptate quis molestias dolorem ullam, dolore et
+                  dolorum laudantium hic incidunt minus rem sit.
+                </p>
+                <a href="#" class="btn">Order Now</a>
+              </div>
+              <div class="image">
+                <img src="images/home-img-1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="content">
+                <span>Our special dish</span>
+                <h3>Grilled chicken</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis voluptatum aut sapiente nobis recusandae explicabo
+                  veniam voluptate quis molestias dolorem ullam, dolore et
+                  dolorum laudantium hic incidunt minus rem sit.
+                </p>
+                <a href="#" class="btn">Order Now</a>
+              </div>
+              <div class="image">
+                <img src="images/home-img-2.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="content">
+                <span>Our special dish</span>
+                <h3>Hot pizza</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis voluptatum aut sapiente nobis recusandae explicabo
+                  veniam voluptate quis molestias dolorem ullam, dolore et
+                  dolorum laudantium hic incidunt minus rem sit.
+                </p>
+                <a href="#" class="btn">Order Now</a>
+              </div>
+              <div class="image">
+                <img src="images/home-img-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </div>
     <!--Dishes Section-->
+    <div class="container">
+      <section class="dishes" id="dishes">
+        <h3 class="sub-heading">Our Dishes</h3>
+        <h1 class="heading">Popular Dishes</h1>
+        <div class="box-container">
+          <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/dish-1.png" alt="" />
+            <h3>tasty food</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <span>250.99฿</span>
+            <a href="#" class="btn">Add to cart</a>
+          </div>
+          <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/dish-2.png" alt="" />
+            <h3>tasty food</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span>156.99฿</span>
+            <a href="#" class="btn">Add to cart</a>
+          </div>
+          <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/dish-3.png" alt="" />
+            <h3>tasty food</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span>100.99฿</span>
+            <a href="#" class="btn">Add to cart</a>
+          </div>
+          <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/dish-4.png" alt="" />
+            <h3>tasty food</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <span>157.99฿</span>
+            <a href="#" class="btn">Add to cart</a>
+          </div>
+          <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/dish-5.png" alt="" />
+            <h3>tasty food</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span>15.99฿</span>
+            <a href="#" class="btn">Add to cart</a>
+          </div>
+          <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/dish-6.png" alt="" />
+            <h3>tasty food</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <span>70.99฿</span>
+            <a href="#" class="btn">Add to cart</a>
+          </div>
+        </div>
+      </section>
+    </div>
     <!--About Section-->
+    <div class="container">
+      <section class="about">
+        <h3 class="sub-heading">About us</h3>
+        <h1 class="heading">Why choose us?</h1>
+        <div class="row">
+          <div class="image">
+            <img src="images/about-img.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Best food in the country</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptate corrupti deserunt quam enim deleniti quo magni numquam
+              illum velit facere sed itaque, voluptatibus labore. Quidem at
+              pariatur officia placeat cumque!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum non
+              quaerat consequatur et labore necessitatibus dicta quasi sunt
+              delectus veritatis ullam, aspernatur aliquid sint quia voluptatem
+              libero nam accusantium exercitationem.
+            </p>
+            <div class="icon-container">
+              <div class="icons">
+                <i class="fas fa-shipping-fast"></i>
+                <span>free delivery</span>
+              </div>
+              <div class="icons">
+                <i class="fas fa-dollar-sign"></i>
+                <span>easy payment</span>
+              </div>
+              <div class="icons">
+                <i class="fas fa-headset"></i>
+                <span>24/7 service</span>
+              </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=lF0UAFy-TxE" class="btn"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
     <!--Menu Section-->
     <!--Review Section-->
     <!--Order Section-->
     <!--Footer Section-->
     <!--Loader Section-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
